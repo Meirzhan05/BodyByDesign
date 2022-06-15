@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <form method="POST" action="{% url 'save_page' %}">
+        {% csrf_token %}
+        <div>
+            <label class="type_title">Enter Title:</label>
+            <input required class="type_title" type="text" name="title">
+        </div>
+        <h6>Content only supports Markdown language from GitHub</h2>
+        <div>
+            <textarea name="text" class="type_name" style="max-height:200px; resize: none;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
