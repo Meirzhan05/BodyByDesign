@@ -1,0 +1,235 @@
+:root {
+    --dark-color: #1f2937;
+    --light-color: #f9faf8;
+    --quote-section-color: #e5e7eb;
+    --button-color: #3882f6;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Hero New', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.dark {
+    background: var(--dark-color);
+    padding-bottom: 50px;
+    margin-bottom: 50px ;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    position: relative;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+    font-size: 20px;
+    color: var(--quote-section-color);
+    position: relative;
+    left: 100px
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0; 
+    width: 500px;
+    gap: 20px
+}
+
+#form > h1{
+    display: flex;
+    color: var(--light-color);
+    font-size: 48px;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 0;
+}
+
+#form > p {
+    color: var(--quote-section-color);
+    font-size: 18px;
+    width: 500px;
+    margin: 0;
+}
+
+#form > button {
+    background-color: var(--button-color);
+    color: var(--light-color);
+    border: none;
+    width: 125px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+#form > button:hover {
+    cursor: pointer;
+}
+
+#image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#nutrition {
+    font-size: 40px;
+    color: var(--dark-color);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#info-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#info-list > li {
+    width: 20vw;
+}
+
+#info-list > li > img {
+    object-fit: cover;
+    width: 220px;
+    height: 200px;
+    border: 4px solid var(--button-color);
+    border-radius: 20px;
+}
+
+#info-list > li > p {
+    font-size: 15px;
+    width: 250px;
+    font-weight: 600;
+    color: #4f5053;
+}
+
+#quote {
+    width: 100%;
+    background-color: var(--quote-section-color);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0
+}
+
+#blockquote > p {
+    display: block;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    width: 850px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+#blockquote > span {
+    display: flex;
+    font-size: 22px;
+    justify-content: flex-end;
+    font-weight: bolder;
+    color: var(--dark-color)
+}
+
+#register-call {
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px; 
+    padding: 0 500px;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+#call-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2px;
+}
+
+#call-text > p {
+    margin: 0;
+}
+
+#call-text > #white {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    width: 500px;
+}
+
+#call-text > #grey {
+    color: var(--quote-section-color);
+    font-size: 16px
+}
+
+#sign-up-button {
+    display: flex;
+    text-wrap:nowrap;
+    padding: 10px 35px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--light-color);
+    background-color: var(--button-color);
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+}
+
+#sign-up-button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--quote-section-color);
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+}
